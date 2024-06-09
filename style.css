@@ -1,0 +1,97 @@
+[v-cloak] {
+    display: none;
+}
+
+body {
+    font-family: "Comic Sans MS";
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.jutsu {
+    padding: 0;
+    display: block;
+}
+
+.jutsuB {
+    font-family: "Comic Sans MS";
+    margin: 4px;
+    padding: 4px;
+    border-radius: 8px;
+    box-shadow: 0 0 1px 1px rgba(10, 10, 10, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+li {
+    margin: 16px;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.character-card {
+    text-align: center;
+}
+
+.character-card img {
+    width: 160px;
+    height: 160px;
+}
+
+.character-name {
+    font-weight: bold;
+    margin: 10px;
+}
+
+.Amegakure { background-color: #8000ff }
+.Bamboo_Village { background-color: #4CAF50 }
+.Ceramic_Village { background-color: #BDB76B }
+.Curtain_Village { background-color: #FFD700 }
+.Daidai_Village { background-color: #FF8C00 }
+.Genjutsu_Tree_Village { background-color: #228B22 }
+.Hachō_Village { background-color: #ADFF2F }
+.Hoshigakure { background-color: #00BFFF }
+.Howling_Wolf_Village { background-color: #808080 } 
+.Inaho_Village { background-color: #FFDEAD }
+.Ishigakure { background-color: #8B4513 }
+.Iwagakure { background-color: #D2691E }
+.Land_of_Waves { background-color: #1E90FF }
+.Jōmae_Village { background-color: #FF1493 }
+.Kagerō_Village { background-color: #FF4500 }
+.Kirigakure { background-color: #4169E1 }
+.Kisaragi_Village { background-color: #6A5ACD }
+.Konohagakure { background-color: #32CD32 }
+.Kumogakure { background-color: #F0E68C }
+.Kusagakure { background-color: #008000 }
+.Mount_Katsuragi { background-color: #4682B4 }
+.Mount_Myōboku { background-color: #DAA520 }
+.Nadeshiko_Village { background-color: #FF69B4 }
+.Otogakure { background-color: #FF6347 }
+.Ryūchi_Cave { background-color: #2E8B57 }
+.Shangri_la { background-color: #FFDAB9 }
+.Shikkotsu_Forest { background-color: #228B22 }
+.Shimogakure { background-color: #808080 }
+.Sugi_Village { background-color: #D2B48C }
+.Sunagakure { background-color: #F4A460 }
+.Takigakure { background-color: #D2691E }
+.Takumi_Village { background-color: #BDB76B }
+.Tanigakure { background-color: #DAA520 }
+.Tonika_Village { background-color: #FFDEAD }
+.Tsuchigumo_Village { background-color: #8B4513 }
+.Tsukigakure { background-color: #FF1493 }
+.Uzushiogakure { background-color: #FF4500 }
+.Yugakure { background-color: #00BFFF }
+.Yukigakure { background-color: #808080 }
+.Yumegakure { background-color: #ADFF2F }

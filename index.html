@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Naruto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+<div id="app" v-cloak>
+    <div class="search-bar">
+        <input type="text" v-model="searchText" placeholder="Procure um personagem">
+    </div>
+    <div class="character-container">
+        <ul>
+            <li v-for="character in filtredCharacter" :key="character.id" :class="getTypeClass(formatType(character.personal.affiliation))">
+                <div class="character-card">
+                    <img :src="character.images" alt="character">
+                    <p class="character">{{character.name.toUpperCase()}}</p>
+                    <div v-if="character.personal.birthdate && character.personal.birthdate.length > 0">
+                        <p class="character">Born: {{character.personal.birthdate}}</p>
+                    </div>
+                    <div v-if="character.showDetails" class="details">    
+                        <div v-if="character.jutsu && character.jutsu.length > 0">
+                            <p class="jutsuB" @click="showJutsus = !showJutsus">Jutsus</p>
+                            <ul class="jutsu" v-show="showJutsus">
+                                <li v-for="jutsu in character.jutsu">{{ jutsu }}</li>
+                            </ul>                        
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div v-if="loading" >Loading... </div>
+</div>
+</body>
+</html>
+
+<script src="index.js"></script>
